@@ -5,3 +5,10 @@ Template.blog.helpers({
   }
 
 });
+
+
+Template.blog.events({
+  'click .delete' : function(){
+    BlogPosts.remove(this._id);
+  }
+});
